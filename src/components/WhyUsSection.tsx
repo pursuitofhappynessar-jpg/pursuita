@@ -6,7 +6,7 @@ const WhyUsSection = () => {
   };
 
   return (
-    <section id="why" className="section-padding bg-background relative overflow-hidden">
+    <section id="why" className="section-padding bg-background relative overflow-hidden" dir="rtl">
       {/* Background Icons */}
       <div className="bg-icons">
         <Shield className="absolute top-20 left-16 w-6 h-6 text-primary animate-float" style={{ animationDelay: '0s' }} />
@@ -25,14 +25,14 @@ const WhyUsSection = () => {
                 لماذا نحن ؟
               </h2>
               
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mt-8">
                 لأننا نؤمن أن نجاحك هو نجاحنا! وعشان كده بنحرص نقدملك خدمة متميزة تساعدك توصل لهدفك بأقل تكلفة وأعلى جودة.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-12 mt-16">
               <div className="space-y-4 text-right">
-                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end">
+                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end mb-6">
                   <span>خبرة متنوعة</span>
                   <Shield className="w-6 h-6 text-primary" />
                 </h3>
@@ -42,7 +42,7 @@ const WhyUsSection = () => {
               </div>
               
               <div className="space-y-4 text-right">
-                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end">
+                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end mb-6">
                   <span>مرونة في التعامل</span>
                   <Clock className="w-6 h-6 text-accent" />
                 </h3>
@@ -52,7 +52,7 @@ const WhyUsSection = () => {
               </div>
               
               <div className="space-y-4 text-right">
-                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end">
+                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end mb-6">
                   <span>دعم مستمر</span>
                   <Users className="w-6 h-6 text-primary" />
                 </h3>
@@ -62,7 +62,7 @@ const WhyUsSection = () => {
               </div>
               
               <div className="space-y-4 text-right">
-                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end">
+                <h3 className="text-xl font-bold text-foreground flex items-center gap-3 justify-end mb-6">
                   <span>جودة عالية بأسعار منافسة</span>
                   <Award className="w-6 h-6 text-accent" />
                 </h3>
@@ -72,7 +72,7 @@ const WhyUsSection = () => {
               </div>
             </div>
             
-            <div className="pt-8">
+            <div className="pt-12">
               <button
                 onClick={handleWhatsAppClick}
                 className="btn-hero text-lg px-10 py-5"

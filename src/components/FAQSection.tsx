@@ -32,19 +32,19 @@ const FAQSection = () => {
       <div className="container-max max-w-4xl">
         <div className="text-center space-y-4 mb-16 scroll-animate">
           <h2 className="text-3xl md:text-5xl font-bold">
-            <span className="gradient-text">الأسئلة الشائعة</span>
+            <span className="text-foreground">الأسئلة الشائعة</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground mt-8">
             في القسم ده، جمعنا أكتر الأسئلة اللي بتوصلنا من عملاؤنا الكرام، 
             عشان نوضحلك كل حاجة بشفافية كاملة.
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-6">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="card-premium cursor-pointer scroll-animate"
+              className="card-premium cursor-pointer scroll-animate py-8"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => toggleFAQ(index)}
             >

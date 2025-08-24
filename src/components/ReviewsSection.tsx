@@ -79,14 +79,9 @@ const ReviewsSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
               <div key={review.name} className="bg-card rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300 scroll-animate">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-primary-foreground font-bold text-xl">
-                    {review.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-foreground">{review.name}</h3>
-                    <p className="text-muted-foreground">{review.title}</p>
-                  </div>
+                <div className="mb-6">
+                  <h3 className="text-lg font-bold text-foreground mb-2">{review.name}</h3>
+                  <p className="text-muted-foreground">{review.title}</p>
                 </div>
                 
                 <div className="flex gap-1 mb-4">

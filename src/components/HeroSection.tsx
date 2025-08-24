@@ -7,7 +7,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="section-padding bg-background relative overflow-hidden min-h-screen flex items-center pt-32">
+    <section id="home" className="section-padding bg-background relative overflow-hidden min-h-screen flex items-center pt-40">
       {/* Background Icons */}
       <div className="bg-icons">
         <Code className="absolute top-20 left-16 w-8 h-8 text-primary animate-float" style={{ animationDelay: '0s' }} />
@@ -21,9 +21,9 @@ const HeroSection = () => {
       <div className="container-max relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           <div className="space-y-8 scroll-animate">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mt-8">
               نبني حضورك الرقمي بتصميم 
-              <span className="gradient-text-hero block mt-2">
+              <span className="text-foreground block mt-2">
                 مواقع وهوية بصرية مميزة!
               </span>
             </h1>

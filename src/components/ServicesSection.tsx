@@ -27,16 +27,16 @@ const ServicesSection = () => {
       <div className="container-max">
         <div className="text-center space-y-4 mb-16 scroll-animate">
           <h2 className="text-3xl md:text-5xl font-bold">
-            الخدمات <span className="gradient-text">التي نقدمها</span>
+            الخدمات <span className="text-foreground">التي نقدمها</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-8">
             وراء كل خدمة من هذه الخدمات شخص محترف ومتمكن، مخصص لتقديم هذه الخدمة فقط.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service, index) => (
-            <div key={index} className="card-service scroll-animate" style={{ animationDelay: `${index * 0.2}s` }}>
+            <div key={index} className="card-service scroll-animate py-10" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-gradient-primary rounded-xl">
                   <service.icon size={24} className="text-white" />

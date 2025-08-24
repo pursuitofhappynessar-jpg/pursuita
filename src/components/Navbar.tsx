@@ -37,10 +37,12 @@ const Navbar = () => {
     }`}>
       <div className="container-max">
         <div className="flex items-center justify-between h-20 px-4">
+        <div className="flex items-center justify-between h-24 px-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold gradient-text-hero">
-              Pursuita
+            <a href="#home" className="flex items-center gap-3">
+              <img src="/logo.png" alt="Pursuita" className="h-10 w-auto" />
+              <span className="text-2xl font-bold text-foreground">Pursuita</span>
             </a>
           </div>
 
